@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, {Component} from 'react';
 
 export default class Navbar extends Component {
   render() {
@@ -8,9 +8,9 @@ export default class Navbar extends Component {
           <div className="nav-wrapper">
             <a href="#" className="brand-logo right">Logo</a>
             <ul id="nav-mobile" className="left hide-on-med-and-down">
-              <li><a href="sass.html">Projects</a></li>
-              <li><a href="badges.html">Volunteer Work</a></li>
-              <li><a href="collapsible.html">Music</a></li>
+              <li><a>Projects</a></li>
+              <li><a>Volunteer Work</a></li>
+              <li><a>Music</a></li>
             </ul>
           </div>
         </nav>

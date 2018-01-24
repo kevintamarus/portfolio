@@ -13,7 +13,7 @@ export default class App extends Component {
   render() {
     return (
       <div>
-        <Navbar/>
+        <Navbar history={history}/>
         <Router history={history}>
           <Switch>
             <Route exact path='/' component={Home}/>

@@ -15,12 +15,14 @@ export default class Navbar extends Component {
               <li><a onClick={() => history.push('/skills')}>Technical Skills</a></li>
               <li><a onClick={() => history.push('/volunteer')}>Volunteer Work</a></li>
               <li><a onClick={() => history.push('/music')}>Music</a></li>
+              <li><a onClick={() => history.push('/running')}>Running</a></li>
             </ul>
             <ul id="mobile-demo" className="side-nav">
               <li><a onClick={() => history.push('/projects')}>Projects</a></li>
               <li><a onClick={() => history.push('/skills')}>Technical Skills</a></li>
               <li><a onClick={() => history.push('/volunteer')}>Volunteer Work</a></li>
               <li><a onClick={() => history.push('/music')}>Music</a></li>
+              <li><a onClick={() => history.push('/running')}>Running</a></li>
             </ul>
           </div>
         </nav>

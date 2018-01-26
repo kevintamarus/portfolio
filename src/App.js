@@ -9,6 +9,7 @@ import Skills from './components/Skills';
 import Volunteer from './components/Volunteer';
 import Music from './components/Music';
 import Running from './components/Running';
+import ModalMenu from './components/Modal';
 
 export default class App extends Component {
   render() {
@@ -23,6 +24,7 @@ export default class App extends Component {
             <Route exact path='/volunteer' component={Volunteer}/>
             <Route exact path='/music' component={Music}/>
             <Route exact path='/running' component={Running}/>
+            <Route exact path='/modal' component={ModalMenu}/>
           </Switch>
         </Router>
       </div>

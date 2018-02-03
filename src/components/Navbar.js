@@ -14,25 +14,23 @@ export default class Navbar extends Component {
           <div className="nav-wrapper">
             <a href="#!" className="brand-logo right" style={{cursor:'pointer'}} onClick={() => history.push('/')}>Home</a>
             <Modal
-            id='foo'
-        
-        trigger={
-            <a href="#foo" 
-              data-activates="mobile-demo" 
-              className="button-collapse" 
-              onClick={() => history.push('/modal')}
-            ><i className="material-icons">menu</i></a>}
-            header='Modal Header'>
-        Lorem ipsum dolor sit amet
+              id='foo'
+              trigger={
+                <a href="#foo" 
+                  className="button-collapse" 
+                  onClick={() => history.push('/modal')}
+                ><i className="material-icons">menu</i></a>
+              }
+              header='Modal Header'>
+              <div>
+                <div><a onClick={() => history.push('/projects')}>Projects</a></div>
+                <div><a onClick={() => history.push('/skills')}>Technical Skills</a></div>
+                <div><a onClick={() => history.push('/volunteer')}>Volunteer Work</a></div>
+                <div><a onClick={() => history.push('/music')}>Music</a></div>
+                <div><a onClick={() => history.push('/running')}>Running</a></div>
+              </div>
             </Modal>
             <ul id="nav-mobile" className="left hide-on-med-and-down">
-              <li><a onClick={() => history.push('/projects')}>Projects</a></li>
-              <li><a onClick={() => history.push('/skills')}>Technical Skills</a></li>
-              <li><a onClick={() => history.push('/volunteer')}>Volunteer Work</a></li>
-              <li><a onClick={() => history.push('/music')}>Music</a></li>
-              <li><a onClick={() => history.push('/running')}>Running</a></li>
-            </ul>
-            <ul id="mobile-demo" className="side-nav">
               <li><a onClick={() => history.push('/projects')}>Projects</a></li>
               <li><a onClick={() => history.push('/skills')}>Technical Skills</a></li>
               <li><a onClick={() => history.push('/volunteer')}>Volunteer Work</a></li>

@@ -6,7 +6,6 @@ import $ from 'jquery';
 export default class Navbar extends Component {
 
   render() {
-    console.log(this.refs, 'refs')
     const {history} = this.props;
     return (
       <div className="navbar-fixed">
@@ -14,20 +13,20 @@ export default class Navbar extends Component {
           <div className="nav-wrapper">
             <a href="#!" className="brand-logo right" style={{cursor:'pointer'}} onClick={() => history.push('/')}>Home</a>
             <Modal
+              style={{backgroundColor: 'blue'}}
               id='foo'
               trigger={
                 <a href="#foo" 
-                  className="button-collapse" 
-                  onClick={() => history.push('/modal')}
+                  className="button-collapse"
                 ><i className="material-icons">menu</i></a>
-              }
-              header='Modal Header'>
-              <div>
-                <div><a onClick={() => history.push('/projects')}>Projects</a></div>
-                <div><a onClick={() => history.push('/skills')}>Technical Skills</a></div>
-                <div><a onClick={() => history.push('/volunteer')}>Volunteer Work</a></div>
-                <div><a onClick={() => history.push('/music')}>Music</a></div>
-                <div><a onClick={() => history.push('/running')}>Running</a></div>
+              }>
+              <div className="center-align">
+                <div className="modal-action modal-close" style={{cursor:'pointer'}}><a onClick={() => history.push('/')}>Home</a></div>
+                <div className="modal-action modal-close" style={{cursor:'pointer'}}><a onClick={() => history.push('/projects')}>Projects</a></div>
+                <div className="modal-action modal-close" style={{cursor:'pointer'}}><a onClick={() => history.push('/skills')}>Technical Skills</a></div>
+                <div className="modal-action modal-close" style={{cursor:'pointer'}}><a onClick={() => history.push('/volunteer')}>Volunteer Work</a></div>
+                <div className="modal-action modal-close" style={{cursor:'pointer'}}><a onClick={() => history.push('/music')}>Music</a></div>
+                <div className="modal-action modal-close" style={{cursor:'pointer'}}><a onClick={() => history.push('/running')}>Running</a></div>
               </div>
             </Modal>
             <ul id="nav-mobile" className="left hide-on-med-and-down">

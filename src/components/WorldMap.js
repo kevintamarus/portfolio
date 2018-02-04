@@ -1,6 +1,7 @@
-import React, { Component } from 'react'
-import worlddata from './world'
-import { geoMercator, geoPath } from 'd3-geo'
+import React, { Component } from 'react';
+import worlddata from './world';
+import { geoMercator, geoPath } from 'd3-geo';
+import '../App.css';
 
 export default class WorldMap extends Component {
    render() {
@@ -13,7 +14,7 @@ export default class WorldMap extends Component {
       className='countries'
       />)
     return (
-      <svg width={1000} height={1000}>
+      <svg style={{backgroundColor: '#ffffff'}} width={1000} height={450}>
         {countries}
       </svg>
     )

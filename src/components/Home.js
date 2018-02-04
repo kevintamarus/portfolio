@@ -8,9 +8,7 @@ export default class Home extends Component {
       <div className="center-align">
         <h1>Home Page</h1>
         <BarChart data={[5,10,1,3]} size={[500,500]} />
-        <div>
-          <WorldMap/>
-        </div>
+        <WorldMap/>
       </div>
     );
   }

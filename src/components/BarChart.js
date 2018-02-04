@@ -1,7 +1,8 @@
-import React, { Component } from 'react'
-import { scaleLinear } from 'd3-scale'
-import { max } from 'd3-array'
-import { select } from 'd3-selection'
+import React, { Component } from 'react';
+import { scaleLinear } from 'd3-scale';
+import { max } from 'd3-array';
+import { select } from 'd3-selection';
+import '../App.css';
 
 export default class BarChart extends Component {
    constructor(props){
@@ -42,7 +43,7 @@ export default class BarChart extends Component {
       .attr('width', 25)
    }
 render() {
-      return <svg ref={node => this.node = node}
+      return <svg style={{backgroundColor: '#ffffff'}} ref={node => this.node = node}
       width={500} height={500}>
       </svg>
    }

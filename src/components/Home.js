@@ -1,5 +1,4 @@
 import React, {Component} from 'react';
-import BarChart from './BarChart';
 import WorldMap from './WorldMap';
 
 export default class Home extends Component {

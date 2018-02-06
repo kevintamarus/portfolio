@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {Modal} from 'react-materialize';
+import ModalMenu from './ModalMenu';
 
 export default class Navbar extends Component {
   constructor(props) {
@@ -46,43 +46,7 @@ export default class Navbar extends Component {
               history.push('/')
               this.changeNavColor();
               }}>Home</a>
-            <Modal
-              style={{backgroundColor: 'rgba(0,0,0,0.1)'}}
-              fixedFooter={false}
-              bottomSheet={true}
-              id='foo'
-              trigger={
-                <a href="#foo" 
-                  className="button-collapse"
-                ><i className="material-icons">menu</i></a>
-              }>
-              <div className="center-align">
-                <div className="modal-action modal-close" style={{cursor:'pointer'}}><a onClick={() => {
-                  history.push('/');
-                  this.changeNavColor();
-                  }}>Home</a></div>
-                <div className="modal-action modal-close" style={{cursor:'pointer'}}><a onClick={() => {
-                  history.push('/projects');
-                  this.changeNavColor('Projects');
-                  }}>Projects</a></div>
-                <div className="modal-action modal-close" style={{cursor:'pointer'}}><a onClick={() => {
-                  history.push('/skills');
-                  this.changeNavColor('Skills');
-                }}>Technical Skills</a></div>
-                <div className="modal-action modal-close" style={{cursor:'pointer'}}><a onClick={() => {
-                  history.push('/volunteer');
-                  this.changeNavColor('Volunteer');
-                }}>Volunteer Work</a></div>
-                <div className="modal-action modal-close" style={{cursor:'pointer'}}><a onClick={() => {
-                  history.push('/music');
-                  this.changeNavColor('Music');
-                }}>Music</a></div>
-                <div className="modal-action modal-close" style={{cursor:'pointer'}}><a onClick={() => {
-                  history.push('/running');
-                  this.changeNavColor('Running');
-                }}>Running</a></div>
-              </div>
-            </Modal>
+            <ModalMenu changeNavColor={this.changeNavColor} history={history}/>
             <ul id="nav-mobile" className="right hide-on-med-and-down">
               <li><a style={{color: navColorProjects}} onClick={() => {
                 history.push('/projects');

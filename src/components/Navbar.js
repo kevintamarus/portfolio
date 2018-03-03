@@ -21,7 +21,7 @@ export default class Navbar extends Component {
     }
   }
 
-  changeNavColor = (color) => {
+  changeNavColor = color => {
     this.setState({
       navColorProjects: 'white',
       navColorSkills: 'white',
@@ -71,7 +71,6 @@ export default class Navbar extends Component {
             </ul>
           </div>
         </nav>
-        
       </div>
     );
   }

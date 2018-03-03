@@ -82,12 +82,12 @@ const styles = {
     cursor: 'pointer',
     fontFamily: 'Georgia',
     fontSize: 35,
-    color: 'white'
+    color: '#00FFFF'
   },
   highlighted: {
     cursor: 'pointer',
     fontFamily: 'Georgia',
-    fontSize: 35,
+    fontSize: 37,
     color: 'yellow'
   }
 }
